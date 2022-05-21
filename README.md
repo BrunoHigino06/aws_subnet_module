@@ -13,10 +13,10 @@ subnet_cidrblocks : cidr_block of the created subnets
 
 To use this kind of variable in the module it's necessary create a instance of the variable on de main.tf, for example:
 
-module "subnet" {
-  source = "git::https://github.com/BrunoHigino06/aws_subnet_module.git"
-
-  subnets_names      = ["subnet1", "subnet2"]
-  subnets_cidr_block = ["10.0.1.0/24", "10.0.2.0/24"]
-  subnet_az          = ["us-east-1a", "us-east-1b"]
+module "subnet" {<br>
+  source = "git::https://github.com/BrunoHigino06/aws_subnet_module.git"<br>
+<br>
+  subnets_names      = ["subnet1", "subnet2"]<br>
+  subnets_cidr_block = ["10.0.1.0/24", "10.0.2.0/24"]<br>
+  subnet_az          = ["us-east-1a", "us-east-1b"]<br>
 }
