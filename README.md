@@ -14,7 +14,7 @@ subnet_cidrblocks : cidr_block of the created subnets
 To use this kind of variable in the module it's necessary create a instance of the variable on de main.tf, for example:
 
 module "subnet" {
-  source = "git::https://github.com/BrunoHigino06/terraform_modules.git//aws/network/subnet"
+  source = "git::https://github.com/BrunoHigino06/aws_subnet_module.git"
 
   subnets_names      = ["subnet1", "subnet2"]
   subnets_cidr_block = ["10.0.1.0/24", "10.0.2.0/24"]
